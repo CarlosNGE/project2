@@ -115,25 +115,36 @@ section {
   
   .controls{
     display: flex;
-    justify-content: space-around;
-    margin-top: 22rem;
+    
+
   }
   
   .controls a{
-    font-size: larger;
-    border: 1px solid black;
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    text-decoration: none;
-    background-color: rgb(232, 130, 96);
+    font-size: 80px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, .2);
     color: #fff;
-    font-weight: bolder;
-    letter-spacing: 2px;
-  }
-  
-  .caption{
+    cursor: pointer;
     
   }
+
+  .next-btn{
+    padding: .1rem 1.1rem .5rem 1.7rem;
+    position: absolute;
+    top: 500px;
+    right: 225px;
+    
+  }
+
+  .back-btn{
+    padding: .1rem 1.7rem .5rem 1.1rem;
+    position: absolute;
+    top: 500px;
+    left: 225px;
+    
+  }
+  
+
 
   figcaption{
     text-align: center;
