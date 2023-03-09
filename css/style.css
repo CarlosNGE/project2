@@ -126,7 +126,7 @@ section {
   }
   
   .controls a{
-    font-size: 75px;
+    
     border-radius: 70px;
     background-color: rgba(0, 0, 0, .3);
     color: #fff;
@@ -135,25 +135,27 @@ section {
   }
 
   .next-btn{
-    padding: .5rem 1.5rem 1.1rem 2.5rem;
-    position: absolute;
-    top: 500px;
-    right: 220px;
+    font-size: 85px;
+    padding: 1.3rem 1.5rem 1.2rem 2.8rem;
+    position: relative;
+    bottom: 144px;
+    left: 580px;
     
   }
 
   .back-btn{
-    padding: .5rem 2.5rem 1.1rem 1.5rem;
-    position: absolute;
-    top: 500px;
-    left: 220px;
+    font-size: 67px;
+    padding: 1rem 2.5rem .6rem 1.8rem;
+    position: relative;
+    bottom: 144px;
+    right: 70px;
     
   }
 
   .controls a:hover,
   .controls a:focus{
     color: #fff;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .6);
 }
 
 
