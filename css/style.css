@@ -104,6 +104,12 @@ section {
     height: 400px;
     margin: 1rem 0;
     text-align: center;
+    
+    border: none;
+  }
+
+  .frame img{
+    border-radius: 20px;
   }
   
   .slide {
@@ -120,30 +126,35 @@ section {
   }
   
   .controls a{
-    font-size: 80px;
-    border-radius: 50px;
-    background-color: rgba(0, 0, 0, .2);
+    font-size: 75px;
+    border-radius: 70px;
+    background-color: rgba(0, 0, 0, .3);
     color: #fff;
     cursor: pointer;
     
   }
 
   .next-btn{
-    padding: .1rem 1.1rem .5rem 1.7rem;
+    padding: .5rem 1.5rem 1.1rem 2.5rem;
     position: absolute;
     top: 500px;
-    right: 225px;
+    right: 220px;
     
   }
 
   .back-btn{
-    padding: .1rem 1.7rem .5rem 1.1rem;
+    padding: .5rem 2.5rem 1.1rem 1.5rem;
     position: absolute;
     top: 500px;
-    left: 225px;
+    left: 220px;
     
   }
-  
+
+  .controls a:hover,
+  .controls a:focus{
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+}
 
 
   figcaption{
@@ -166,4 +177,19 @@ section {
   
   .spacer {
     padding: 2rem;
+  }
+
+  .image-fade{
+    animation: imgfade 0.5s ease-in-out;
+
+  }
+
+  @keyframes imgfade{
+    0% {
+      opacity: 0;
+    }
+
+    100%{
+      opacity: 1;
+    }
   }

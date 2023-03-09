@@ -7,6 +7,7 @@ function init() {
   const next_btn = document.querySelector(".next-btn");
   const frame = document.querySelector(".frame");
   const slides = frame.querySelectorAll("img");
+  const cont = document.querySelector(".title");
 
   //with JS active, hide all images
   slides.forEach((slide) => {
@@ -18,9 +19,16 @@ function init() {
   
    next_btn.addEventListener("click",changeSlide);
    back_btn.addEventListener("click", changeSlide);
+  
+   
 
    
 }
+
+
+
+  slides.classList.toggle("image-fade");
+
 
 
 
@@ -29,8 +37,12 @@ function changeSlide(e) {
     // stop link from trying to reload page
     e.preventDefault();
     clearInterval(myInterval);
+    
+    
 
   }
+   
+  
     
     //shortcut vars
     const frame = document.querySelector(".frame");
@@ -38,12 +50,17 @@ function changeSlide(e) {
     let showing = document.querySelector(".current");
     let nextUp = "";
     let caption =document.getElementById("caption");
+
+    
   
     if(!e || e.target.className == 'next-btn') {
       nextUp = showing.nextElementSibling;
     } else {
       nextUp = showing.previousElementSibling;
     }
+
+    
+    
     
     // deactivate current image
     showing.classList.add("hide");
@@ -57,10 +74,14 @@ function changeSlide(e) {
     if (nextUp.nodeName !== "IMG") {
       nextUp = slides[0];
     }
+
+    
   
     // activate next image
     nextUp.classList.remove("hide");
     nextUp.classList.add("current");
+
+    
 
     // grab the alt text from current image
     //let altText = nextUp.getAttribute('alt');
@@ -69,4 +90,6 @@ function changeSlide(e) {
 
     // change the figcaption to the alt text
     caption.innerText = altText;
+
+    nextUp.classList.toggle("image-fade");
   }
