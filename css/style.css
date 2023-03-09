@@ -93,6 +93,11 @@ body{
   font-size: 35px;
 }
 
+.sub-title{
+  font-family: nunito;
+  margin-bottom: 2rem;
+}
+
 section {
     width: 800px;
     margin: auto;
@@ -194,4 +199,11 @@ section {
     100%{
       opacity: 1;
     }
+  }
+
+  .foot{
+    margin-top: 14rem;
+    margin-bottom: 0;
+    background-color: #1b9a5c;
+    
   }
