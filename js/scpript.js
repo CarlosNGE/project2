@@ -91,5 +91,5 @@ function changeSlide(e) {
     // change the figcaption to the alt text
     caption.innerText = altText;
 
-    nextUp.classList.toggle("image-fade");
+    nextUp.classList.add("image-fade");
   }
